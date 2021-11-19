@@ -21,8 +21,6 @@ Files may have been modified to suppress lines, weights at the end of .col file 
 
 DIMAC_large.txt, DIMAC_small.txt, pxx.txt and rxx.txt are the lists of instances used in state of the art to compare algorithm. other.txt list instances in the repertory but currently not used as comparison in the state of the art.
 
-You can find the currents best score (known from Nogueira, Bruno, Eduardo Tavares, et Paulo Maciel. «Iterated Local Search with Tabu Search for the Weighted Vertex Coloring Problem». Computers & Operations Research 125 (1 janvier 2021): 105087. https://doi.org/10.1016/j.cor.2020.105087.) for the wvcp coloring problem in the file best_scores_wvcp.txt, \* mean optimal score and - mean best current score (maybe optimal but not proved). You can also find all scores from the article in sota_wvcp.ods .
-
 To add theses instances to your project :
 
     git submodule add https://github.com/Cyril-Grl/gc_wvcp_instances.git instances
