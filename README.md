@@ -25,6 +25,16 @@ To add theses instances to your project :
 
     git submodule add https://github.com/Cyril-Grl/gc_wvcp_instances.git instances
 
+To delete theses instances from your project :
+
+    git config -f .git/config --remove-section submodule.instances
+    git config -f .gitmodules --remove-section submodule.instances
+    git add .gitmodules
+    git rm --cached instances
+    git add .gitmodules
+    rm -rf instances
+    rm -rf .git/modules/instances
+
 To update :
 
     cd instances/
