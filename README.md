@@ -1,33 +1,37 @@
-# instances for graph coloring and weighted vertex coloring problem
+# Instances for graph coloring and weighted vertex coloring problem
 
-origin of files :
+origin of the files :
 
-    - wvcp_original : http://www.info.univ-angers.fr/pub/hao/wvcp.html
+    - wvcp_original: http://www.info.univ-angers.fr/pub/hao/wvcp.html
     - graph_coloring : DIMACS Challenge II
     - bandwidth_multicoloring_instances : https://mat.gsia.cmu.edu/COLOR04/
-    - given by other teams working on the WVCP
+    - given by other teams working on WVCP
 
-wvcp repertories contains all graphs gathered and their weights, you can find three types of files :
+wvcp repertories contains all collected graphs and their weights, you can find three types of files:
 
-    - .col files from DIMACS Challenge (vertices numbers start at 1)
-    - .edgelist files : each line is an edge between two nodes (vertices number start at 0)
-    - .col.w files : line 1 is the weight of the node 0, line 2 the weight of the node 1 ...
-    - .wcol files : DIMACS Challenge files + v lines with the weights of each vertices (vertices numbers start at 1)
+    - .col files from the DIMACS challenge (vertex numbers start at 1)
+    - .edgelist files: each line is an edge between two nodes (vertex numbers start at 0)
+    - .col.w files : line 1 is the weight of node 0, line 2 the weight of node 1, ...
+    - .wcol files: DIMACS Challenge files + v lines with the weights of each vertex (vertex number starts at 1).
 
-wvcp_original contains original versions of the files.
-wvcp_reduced contains reduced versions of the files (details will be had soon about the reduction).
+wvcp_original contains the original versions of the files.
+wvcp_reduced contains the reduced versions of the files (details about the reduction will be given soon).
 
-Files may have been modified to suppress lines, weights at the end of .col file suppressed to generate .col.w file for example, but all graphs remain the same (number of nodes and edges, weights,...) if you find any mistake please inform us.
+The files may have been modified to remove lines, the weights at the end of the .col file removed to generate the .col.w file for example, but all the graphs remain the same (number of nodes and edges, weights,...) if you find an error please inform us.
 
-You can find the currents best score (known from Nogueira, Bruno, Eduardo Tavares, et Paulo Maciel. «Iterated Local Search with Tabu Search for the Weighted Vertex Coloring Problem». Computers & Operations Research 125 (1 janvier 2021): 105087. https://doi.org/10.1016/j.cor.2020.105087.) for the wvcp coloring problem in the file best_scores_wvcp.txt, \* mean optimal score and - mean best current score (maybe optimal but not proved). You can also find all scores from the article in sota_wvcp.ods .
+You can find the current best known scores for the wvcp coloring problem in the file best_scores_wvcp.txt, known from [1] and [2] , \* means its the optimal score and - means its the current best score (possibly optimal but not proven). These scores are reported scores, the solutions linked to the score are not always available to validate the score and the time spent to reach these scores depends on the article (1h for the score of [1], up to several days for [2]).
 
-DIMAC_large.txt, DIMAC_small.txt, pxx.txt and rxx.txt are the lists of instances used in state of the art to compare algorithm. other.txt list instances in the repertory but currently not used as comparison in the state of the art.
+[1] Nogueira, Bruno, Eduardo Tavares, et Paulo Maciel. «Iterated Local Search with Tabu Search for the Weighted Vertex Coloring Problem». Computers & Operations Research 125 (1 janvier 2021): 105087. https://doi.org/10.1016/j.cor.2020.105087.
 
-To add theses instances to your project :
+[2] Goudet, O., Grelier, C., Hao, J.-K., 2021. A deep learning guided memetic framework for graph coloring problems. arXiv:2109.05948 [cs]
+
+DIMAC_large.txt, DIMAC_small.txt, pxx.txt and rxx.txt are the lists of instances used in the state of the art to compare the algorithms. other.txt lists instances in the directory but not currently used for comparison in the state of the art.
+
+To add this module to your project :
 
     git submodule add https://github.com/Cyril-Grl/gc_wvcp_instances.git instances
 
-To delete theses instances from your project :
+To remove the module from your project :
 
     git config -f .git/config --remove-section submodule.instances
     git config -f .gitmodules --remove-section submodule.instances
