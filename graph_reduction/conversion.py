@@ -6,7 +6,7 @@ from typing import List, Tuple, Dict
 import bisect
 from glob import glob
 
-from instances.graph_reduction.graph import Graph, load_graph
+from graph_reduction.graph import Graph, load_graph
 
 
 def load_conversion(
