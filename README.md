@@ -29,7 +29,7 @@ DIMAC_large.txt, DIMAC_small.txt, pxx.txt and rxx.txt are the lists of instances
 
 To add this module to your project :
 
-    git submodule add https://github.com/Cyril-Grl/gc_wvcp_instances.git instances
+    git submodule add https://github.com/Cyril-Grelier/gc_wvcp_instances.git instances
 
 To remove the module from your project :
 
