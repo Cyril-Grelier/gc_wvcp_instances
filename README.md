@@ -1,5 +1,7 @@
 # Instances for graph coloring and weighted vertex coloring problem
 
+This repo is an old version, please use : https://github.com/Cyril-Grelier/gc_instances (added gcp instances reduced and adapted scripts for gcp)
+
 origin of the files :
 
     - wvcp_original: http://www.info.univ-angers.fr/pub/hao/wvcp.html
