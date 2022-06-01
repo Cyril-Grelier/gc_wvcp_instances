@@ -9,7 +9,7 @@ example (error, print the assertion and exit 1):
     python3 check_solution.py p06 500 0:0:1:1:1:1:2:2:2:2:0:0:4:4:3:3
 
 """
-from instances.graph_reduction.conversion import convert_solution
+from graph_reduction.conversion import convert_solution
 
 import sys
 

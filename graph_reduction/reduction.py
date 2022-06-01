@@ -8,7 +8,7 @@ from glob import glob
 
 import igraph
 
-from instances.graph_reduction.graph import Graph, load_graph
+from graph_reduction.graph import Graph, load_graph
 
 
 def compute_cliques(instance_file: str, timeout: int, output_file: str):
